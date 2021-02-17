@@ -5,10 +5,16 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.7.0",
+    "@testing-library/user-event": "^12.7.1",
+    "aws-api-gateway-client": "^0.3.6",
+    "bootstrap": "^4.6.0",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.0",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "sweetalert-react": "^0.4.11",
+    "typescript": "^4.1.5",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
@@ -34,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.7"
   }
 }

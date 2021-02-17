@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Switch, Route, Redirect} from 'react-router-dom';
+
+import {Navbar } from "./components";
+import {ListOrders, Order, CreateOrder} from './views'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Switch>
+        <Route exact path="/orders" component={ListOrders} />
+        <Route exact path="/orders/create" component={CreateOrder} />
+        <Route exact path="/orders/:orderId" component={Order} />
+
+
+        <Redirect to="/orders" />
+      </Switch>
+    </>
+
   );
 }
 

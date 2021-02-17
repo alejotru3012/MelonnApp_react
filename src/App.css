@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.center {
+  margin: auto;
+  width: 70%;
+  /* border: 1px solid rgb(160, 160, 160); */
+  /* border-left: 1px solid rgb(214, 214, 214);
+  border-right: 1px solid rgb(214, 214, 214); */
+  padding: 10px;
+}
