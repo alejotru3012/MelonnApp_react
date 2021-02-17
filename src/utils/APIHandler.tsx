@@ -14,7 +14,7 @@ class APIHandler {
     getOrders() {
 
         var pathParams = {};
-        var pathTemplate = `/orders`
+        var pathTemplate = `orders`
         var method = 'GET';
         var additionalParams = {};
         var body = "";
@@ -34,7 +34,7 @@ class APIHandler {
     getOrderById(id: any) {
 
         var pathParams = {};
-        var pathTemplate = `/orders/${id}`
+        var pathTemplate = `orders/${id}`
         var method = 'GET';
         var additionalParams = {};
         var body = "";
@@ -54,7 +54,7 @@ class APIHandler {
 
     createOrder(order: any) {
         var pathParams = {};
-        var pathTemplate = `/orders/create`
+        var pathTemplate = `orders/create`
         var method = 'POST';
         var additionalParams = {};
         var body = JSON.stringify(order);
